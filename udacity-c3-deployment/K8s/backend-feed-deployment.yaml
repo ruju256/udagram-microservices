@@ -1,12 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     service: backend-feed
   name: backend-feed
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       service: backend-feed
@@ -68,12 +67,12 @@ spec:
         resources:
           limits:
             cpu: 500m
-            memory: 1Gi
+            memory: "1024Mi"
           requests:
             cpu: 250m
-            memory: 64Mi
+            memory: "64Mi"
         volumeMounts:
-        - mountPath: "/users/../.aws/credentials"
+        - mountPath: "/root/.aws/"
           name: aws-secret
           readOnly: true
       restartPolicy: Always

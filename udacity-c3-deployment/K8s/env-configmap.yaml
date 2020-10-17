@@ -1,12 +1,13 @@
 apiVersion: v1
 kind: ConfigMap
+metadata:
+    name: env-config
 data:
     AWS_BUCKET: udagram-ezra-dev
     AWS_PROFILE: default
     AWS_REGION: us-east-2
     JWT_SECRET: helloworld
     POSTGRESS_DB: udagramezradev
-    POSTGRES_HOST: udagramezradev.ccguxurr5ary.us-east-2.rds.amazonaws.com
+    POSTGRESS_HOST: udagramezradev.ccguxurr5ary.us-east-2.rds.amazonaws.com
     URL: http://localhost:8100
-metadata:
-    name: env-config
+
