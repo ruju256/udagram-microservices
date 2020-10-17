@@ -8,19 +8,19 @@ Link to Travis CI : https://travis-ci.org/github/ruju256/udagram-microservices
 # Screenshots
 
 Travis CI
-![](deployment_images/travis_1.png)
+![](deployment_images/travis_1.PNG)
 
-![](deployment_images/travis_2.png)
+![](deployment_images/travis_2.PNG)
 
 
 Dockerhub Images
 
-![](deployment_images/dockerhub_images.png)
+![](deployment_images/dockerhub_images.PNG)
 
 
 List of pods
 
-![](deployment_images/kubectl_all.png)
+![](deployment_images/kubectl_all.PNG)
 
 
 
